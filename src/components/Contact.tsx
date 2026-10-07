@@ -37,6 +37,15 @@ export function Contact() {
           >
             {profile.email}
           </a>
+          <div className="mt-8">
+            <a
+              href={profile.cv}
+              download
+              className="inline-flex items-center gap-3 bg-ink px-6 py-3.5 text-xs font-black tracking-[0.14em] whitespace-nowrap text-paper uppercase transition-transform hover:-translate-y-0.5 active:translate-y-0 sm:text-sm"
+            >
+              Download CV <span aria-hidden="true">↓</span>
+            </a>
+          </div>
         </Reveal>
         <Reveal delay={150} className="lg:self-end">
           <p className="text-[clamp(1.4rem,2.6vw,2.4rem)] leading-snug font-semibold tracking-[0.04em]">

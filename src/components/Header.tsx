@@ -42,12 +42,22 @@ export function Header() {
             <span className="font-black">Habib</span>
           </span>
         </a>
+        <div className="pointer-events-auto flex items-center gap-3 sm:gap-5">
+        <a
+          href={profile.cv}
+          download
+          className="inline-flex items-center gap-2 border-[3px] border-ink px-3 py-1.5 text-[0.65rem] font-black tracking-[0.12em] whitespace-nowrap uppercase transition-colors hover:bg-ink hover:text-paper sm:px-4 sm:py-2 sm:text-xs"
+        >
+          <span className="sm:hidden">CV</span>
+          <span className="hidden sm:inline">Download CV</span>
+          <span aria-hidden="true">↓</span>
+        </a>
         <button
           type="button"
           onClick={() => setOpen(true)}
           aria-label="Open menu"
           aria-expanded={open}
-          className="pointer-events-auto grid size-11 place-items-center"
+          className="grid size-11 place-items-center"
         >
           <span aria-hidden="true" className="flex w-8 flex-col gap-[6px]">
             <span className="h-[3px] bg-ink" />
@@ -55,6 +65,7 @@ export function Header() {
             <span className="h-[3px] bg-ink" />
           </span>
         </button>
+        </div>
       </header>
 
       <div

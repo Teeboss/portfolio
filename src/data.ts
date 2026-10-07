@@ -7,6 +7,7 @@ export const profile = {
   email: 'tobihabib25@gmail.com',
   linkedin: 'https://www.linkedin.com/in/pelumi-habib-99964a16a/',
   github: 'https://github.com/Teeboss',
+  cv: '/Tobiloba-Pelumi-Habib-CV.pdf',
   years: '6+',
   about: [
     "I'm Pelumi, a full-stack engineer with over six years of building production software: payment platforms, public APIs, learning platforms and the dashboards that run them.",
